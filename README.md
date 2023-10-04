@@ -27,7 +27,7 @@ docker-compose up -d
 ```
 yarn start:dev
 ```
-6. Reconstruir la base de datos con la semilla
+8. Reconstruir la base de datos con la semilla
 ```
 http://localhost:3000/api/v2/seed
 ```
@@ -35,3 +35,10 @@ http://localhost:3000/api/v2/seed
 ## Stack Usado
 * MonguisDB
 * Nest
+
+# Notas
+Heroku redeploy sin cambios:
+```
+git commit --allow-empty -m "Trigger Heroku deployment"
+git push heroku <master|main>
+```
