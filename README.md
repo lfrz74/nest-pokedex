@@ -36,6 +36,16 @@ http://localhost:3000/api/v2/seed
 * MonguisDB
 * Nest
 
+
+# Production Build
+1. Crear el archivo ```.env.prod```
+2. LLenar las variables de entorno de prod
+3. Crear la nueva imagen
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+```
+
+
 # Notas
 Heroku redeploy sin cambios:
 ```
